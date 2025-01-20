@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Settings
+{% endblock %}
+
+{% block main %}
+    <form action="/settings" method="post">
+        <input name="old_password" type="password" placeholder="Insert old password">
+        <input name="password" type="password" placeholder="New password">
+        <input name="confirm_password" type="password" placeholder="Confirm new password">
+        <input name="confirm" type="submit" value="Confirm registration">
+    </form>
+{% endblock %}

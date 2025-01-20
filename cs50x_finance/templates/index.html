@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+
+<h1> Current Stock Portfolio </h1>
+
+<table>
+    <tr>
+        <th> Company Name </th>
+        <th> Stock Symbol </th>
+        <th> Shares Owned </th>
+        <th> Current Stock Price </th>
+        <th> Total Stock Value </th>
+    <tr>
+    <div action="/" method="GET">
+        </tr>
+            {% for dic in index %}
+            </tr>
+                <th> {{ dic.company}} </th>
+                <th> {{ dic.symbol }} </th>
+                <th> {{ "{:,.2f}".format(dic.shares_owned) }} </th>
+                <th> {{ dic.price | usd }} </th>
+                <th> {{ dic.total_value | usd }} </th>
+            </tr>
+            {% endfor %}
+        <tr>
+            <th> {{ total_cash | usd }} </th>
+            <th> {{ grand_total | usd }} </th>
+        </tr>
+    </div>
+</table>
+{% endblock %}

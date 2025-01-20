@@ -1,0 +1,24 @@
+HTML tags:
+1. meta
+2. li
+3. div
+4. nav
+5. button
+6. span
+7. ul
+8. script
+9. img
+10. h5
+
+CSS tags:
+1. background-image
+2. height
+3. width
+4. display
+5. justify-content
+
+JavaScript:
+I used JavaScript to create interactive buttons.
+
+Bootstrap:
+I used Bootstrap to structure my webpage.

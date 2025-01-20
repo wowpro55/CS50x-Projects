@@ -1,0 +1,40 @@
+.bg-isarkitchen {
+  background-image: url('pictures/munich_hero_banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.bg-mainback {
+  background-color: #fff5dc;
+  position: relative;
+}
+
+.line-header {
+  border-top: 3px solid #ffae5c;
+  width: 100%;
+  margin: 10px 0;
+  margin-left: 0;
+  padding: 0;
+  display: block;
+  z-index: 10;
+  position: relative;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  color: black;
+}
+
+
+
