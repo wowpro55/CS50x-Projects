@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3> What is the smallest planet in our solar system? </h3>
+                <table>
+                    <tr>
+                        <td>
+                            <button id="answer1"> Venus </button>
+                        </td>
+                        <td>
+                            <button id="answer2"> Mercury </button>
+                        </td>
+                        <td>
+                            <button id="answer3"> Mars </button>
+                        </td>
+                    </tr>
+                </table>
+                <p id="result"></p>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3> What is the largest city in Germany by population? </h3>
+                <tr>
+                    <td> <input type="text" id="input1"> </td>
+                </tr>
+                <tr>
+                    <td> <button id="confirm"> Confirm here </button></td>
+                </tr>
+                <p id="result2"> </p>
+            </div>
+        </div>
+    </body>
+    <script>
+        document.querySelector('#answer1').onclick = function() {
+            document.querySelector('#answer1').style.backgroundColor = "red";
+            document.querySelector('#result').innerHTML = "Incorrect";
+        }
+        document.querySelector('#answer2').onclick = function() {
+            document.querySelector('#answer2').style.backgroundColor = "green";
+            document.querySelector('#result').innerHTML = "Correct";
+        }
+        document.querySelector('#answer3').onclick = function() {
+            document.querySelector('#answer3').style.backgroundColor = "red";
+            document.querySelector('#result').innerHTML = "Incorrect";
+        }
+        document.querySelector('#confirm').onclick = function() {
+            let input1 = document.querySelector('#input1').value;
+            if(input1 == "Berlin")
+            {
+                document.querySelector('#input1').style.backgroundColor = "green";
+                document.querySelector('#result2').innerHTML = "Correct";
+            }
+            else
+            {
+                document.querySelector('#input1').style.backgroundColor = "red";
+                document.querySelector('#result2').innerHTML = "Incorrect";
+            }
+        }
+
+    </script>
+</html>

@@ -1,0 +1,50 @@
+Task 1: If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+
+Answer: The listeners averages are: Energy: 0.66, Valence: 0.48; Danceability: 0.72
+Based on the averages calculated the person's main aura is Purple, because
+Danceability and Energy is highest. The second tier aura would be orange,
+since energy with an average of 0.65 ranks second.
+
+Task 2: Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. What better ways of calculating this aura would you propose?
+
+Answer:
+
+Definition:
+
+First of all, one could ask how to properly define a music aura?
+I would simply define an aura as a state of mind a particular person is in over a specific period of time.
+(Not relevant in this context but noteworthy: Since aura implicates that other people can sense it, a person might externalize a state of mind through various mechanisms (mimic, gestures, etc).
+Since we cannot verify this real world behaviour, I would propose that spoitfy is really only looking at the most frequent state of mind a person is in and then assuming it is also an aura.)
+For an aura to become a music aura the person is choosing to stabilize, enhance or minimize their state of mind through music.
+
+Assumptions:
+Is every person always leveraging music to manipulate their current state of mind? Probably not, but for the sake of this discussion let's assume they do.
+To simplify the thought experiment, let's also assume that every person always chooses to stabalize their current state of mind.
+These assumptions implicate that the characteristics of the music actually always represent a person's current state of mind.
+
+Calculating a state of mind:
+How would you mathematically define a state of mind? Since a state of mind is experienced over a fixed period of time,
+it is the consequitve listening behaviour during a period of time that defines the state of mind. Consequitve listening behaviour is defined as the selection of songs
+listened to with a maximum break of (let's say) 1 minute within a period of time listening. Also, let's say we only regard periods of time over 15 minutes as a state of mind.
+As an example: A person listens for 30 minutes to a veriety of songs that have a high energy score on average.
+Hence the person is in a high energy state of mind.
+Lastly, we need to do is capture all the music that was listed to during the various state of minds within a year.
+--> Unfortunately in this Spotify data set there are no time stamps of when songs where listened to, so we cannot calculate a state of mind.
+
+Defining music auras:
+With the new concept for state of minds above, we can continue to use averages of the various music characteristics to determine an aura.
+So we just need to define the ranges of the different music characteristics averages of a music aura. A "Purple" aura might be characterised as:
+
+Energy: 0.5 - 0.8
+Valance: 0.0 - 0.5
+Danceability: 0.6 - 1
+
+We need to make sure that we cover all possible combinations of ranges within our aura definitions.
+
+Final step:
+Lastly we need to classify all state of minds a person was in within a year with our aura range definitions and count the various state of minds.
+The state of mind with the highest count determines the strongest music aura a person has. The second most frequent the second strongest music aura, etc.
+
+E voila, we have a more precise person characterization tool.
+
+
